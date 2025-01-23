@@ -16,10 +16,7 @@ public class BeatBoxActivity extends BaseActivity {
         setContentView(R.layout.activity_box_beat);
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragment = fragmentManager.findFragmentById(R.id.content);
-        if(fragment==null){
-            fragment = new BeatBoxFragment();
-        }
-        fragmentManager.beginTransaction().replace(R.id.beatbox,fragment).addToBackStack(null).commit();
+        fragmentManager.beginTransaction().replace(R.id.content,fragment!=null?fragment:new BeatBoxFragment()).addToBackStack(null).commit();
     }
 
     @Override

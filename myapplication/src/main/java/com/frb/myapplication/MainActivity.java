@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.frb.myapplication.activity.BeatBoxActivity;
+import com.frb.myapplication.util.AssetsManager;
 import com.furb.developfoundation.base.android.activity.BaseActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener{
