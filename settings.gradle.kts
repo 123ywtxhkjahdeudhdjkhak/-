@@ -25,6 +25,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Yyong"
+include(":developfoundation")
 include(":app")
 include(":myapplication")
-include(":developfoundation")
+
